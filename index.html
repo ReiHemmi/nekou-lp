@@ -620,5 +620,15 @@ p,li,dd,span,summary,h2,h3{text-wrap:pretty}
 <script>(function(){var f=document.querySelector(".fixed"),p=document.querySelector(".price");function t(){var b=p.getBoundingClientRect().bottom;f.classList.toggle("on",b<0)}addEventListener("scroll",t,{passive:true});t()})();</script>
 <script>document.querySelectorAll("[data-copy]").forEach(function(b){b.addEventListener("click",function(){try{navigator.clipboard.writeText(b.dataset.copy);b.textContent="コピーしました"}catch(e){}})});</script>
 <script>document.querySelectorAll("[data-go]").forEach(function(a){a.addEventListener("click",function(){try{navigator.clipboard.writeText(a.dataset.go)}catch(e){}})});</script>
+
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","zik0wl3cx5");</script>
+<script>(function(){
+function ev(n){try{clarity("event",n)}catch(e){}}
+var q=new URLSearchParams(location.search);["utm_source","utm_campaign","utm_content"].forEach(function(k){if(q.get(k))try{clarity("set",k,q.get(k))}catch(e){}});
+if("IntersectionObserver"in window){var seen={};var io=new IntersectionObserver(function(es){es.forEach(function(e){var id=e.target.id;if(e.isIntersecting&&!seen[id]){seen[id]=1;ev("reach_"+id)}})},{threshold:.4});document.querySelectorAll("section[id]").forEach(function(s){io.observe(s)})}
+document.querySelectorAll('a[href*="creema.jp"]').forEach(function(a){a.addEventListener("click",function(){var s=a.closest("section[id]");ev("go_creema");ev("go_"+(a.dataset.go||"x")+"_"+(s?s.id:"other"))})});
+var f=document.querySelector(".fixed .cta");if(f)f.addEventListener("click",function(){ev("click_fixed_cta")});
+document.querySelectorAll("[data-copy]").forEach(function(b){b.addEventListener("click",function(){ev("copy_"+b.dataset.copy)})});
+})();</script>
 </body>
 </html>
