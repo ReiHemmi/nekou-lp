@@ -345,6 +345,25 @@ p,li,dd,span,summary,h2,h3{text-wrap:pretty}
 .manga figure.comic .fr{position:absolute;left:0;right:0;border:2.5px solid #2f2a2d;z-index:1;pointer-events:none}
 .manga figure.comic .fk{z-index:2}
 .manga .h2g::before{content:"STORY";display:block;font:500 15px/1 "Jost",sans-serif;letter-spacing:.3em;color:#9b55c0;margin-bottom:10px}
+
+/* FV 2026-11-27（実物の写真＋値段を最初の画面に） */
+.fv2{padding:8px 16px 0;background:linear-gradient(180deg,#f3e9df 0%,#efe4f3 60%,#fff 100%);text-align:center}
+.fv2 .h{margin:0;font:600 21px/1.45 "Noto Serif JP",serif;color:#2b2b2b;letter-spacing:.04em}
+.fv2 .h .k{font:900 27px/1.25 "Noto Sans JP";letter-spacing:.02em}
+.fv2 .h .s{display:inline-block;margin-top:2px;font:600 17px/1.5 "Noto Serif JP",serif;letter-spacing:.1em}
+.fv2 .ph{margin:10px -16px 0}
+.fv2 .ph img{aspect-ratio:900/631;object-fit:cover;object-position:50% 45%;height:205px}
+.fv2 .sub{margin:6px 0 8px;font:500 14px/1.6 "Noto Sans JP";color:#4a4046}
+.fv2 .sub span{display:inline-block;margin-left:6px;padding:0 9px;border-radius:999px;background:var(--purple);color:#fff;font:700 11.5px/1.8 "Noto Sans JP";vertical-align:1px}
+.fv .price{margin:0 14px !important}
+.fv .price .in{padding:8px 12px 4px}
+.fv .price .top{display:flex;align-items:center;justify-content:center;gap:10px;padding:0 0 4px}
+.fv .price .lim{font-size:13px}
+.fv .price .off{margin:0}
+.fv .price .off .n{font-size:46px}
+.fv .price .rows li{padding:6px 2px}
+.fv .price .now b{font-size:25px !important}
+.fv .strip{padding-top:18px}
 </style>
 </head>
 <body>
@@ -352,24 +371,11 @@ p,li,dd,span,summary,h2,h3{text-wrap:pretty}
 <div class="hd"><span class="logo">NeKou</span></div>
 
 <section class="fv" id="fv">
-  <div class="photo">
-    <figure class="slot" data-slot="hero4" data-ratio="2/3" data-alt="封筒からのぞく和紙の猫を手にした女性" style="--ratio:2/3;margin:0"><img src="img/hero4.jpg?v=4" alt="封筒からのぞく和紙の猫を手にした女性"></figure>
-    <svg class="topshape" viewBox="0 0 375 420" preserveAspectRatio="none" aria-hidden="true">
-      
-      <defs>
-        <linearGradient id="tsBlob" x1="0" y1="0" x2=".4" y2="1"><stop offset="0" stop-color="#eedfd1"/><stop offset="1" stop-color="#ddc2a8"/></linearGradient>
-        <linearGradient id="tsTop" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#eadbcd" stop-opacity="0"/><stop offset=".45" stop-color="#efe2ea" stop-opacity=".7"/><stop offset="1" stop-color="#e4d6f4" stop-opacity=".9"/></linearGradient>
-        <linearGradient id="tsFade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#000"/></linearGradient>
-        <mask id="tsMask"><rect width="375" height="130" fill="url(#tsFade)"/></mask>
-      </defs>
-      <rect width="375" height="130" fill="url(#tsTop)" mask="url(#tsMask)"/>
-      <path d="M0 0H205C190 55 165 105 125 135C95 157 55 162 0 160Z" fill="url(#tsBlob)" opacity=".95"/>
-    </svg>
-    <svg class="fvcurve" viewBox="0 0 375 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 38C90 8 200 64 375 24V60H0z" fill="#fff"/></svg>
-    <p class="photonote">※写真はイメージです</p>
-    <div class="copy">
-      <h1 style="margin:0;font-weight:inherit"><span class="l1" style="display:flex"><span class="k gtext">推しへの</span><span class="m">手紙を、</span></span><span class="l2" style="display:block"><span class="k gtext">ちょっと特別</span>にする<br>和紙の猫の文香</span></h1>
-    </div>
+  
+  <div class="fv2">
+    <h1 class="h"><span class="k gtext">推しへの</span>手紙を、<br><span class="k gtext">ちょっと特別</span>にする<br><span class="s">和紙の猫の文香</span></h1>
+    <figure class="ph"><img src="img/fv_envelope.jpg" alt="封筒からのぞく和紙の猫の文香（実物）" width="900" height="629"></figure>
+    <p class="sub">便箋にはさむだけの、香る和紙の猫。<span>送料無料</span></p>
   </div>
   <div class="price"><div class="in">
     <div class="top">
@@ -381,11 +387,10 @@ p,li,dd,span,summary,h2,h3{text-wrap:pretty}
       <li><span class="nm">ケース入り<br>5枚</span><span class="was">1,680<small>円</small></span><span class="ar"></span><span class="now"><em>25%OFF</em><b class="gtext">1,260<small>円</small></b></span></li>
     </ul>
   </div></div>
+  <a class="cta" href="#offer" style="margin:12px 20px 0">最大30%OFFで選ぶ</a>
   <div class="strip">
-    <img src="img/cats_cut.png" alt="ポーズの違う5匹の猫の文香">
-    <p class="stripcap">便箋にはさむだけの、香る和紙の猫。<br>観劇の日のファンレターに。<span>送料無料</span></p>
+    <img src="img/cats_cut_s.png" loading="lazy" alt="ポーズの違う5匹の猫の文香">
   </div>
-  <a class="cta" href="#offer" style="margin-top:6px">最大30%OFFで選ぶ</a>
 </section>
 
 <section class="about" id="about">
@@ -406,9 +411,9 @@ p,li,dd,span,summary,h2,h3{text-wrap:pretty}
   <div class="what">
     <h3>NeKouとは？</h3>
     <div class="p">
-      <span class="ic" style="width:34px;height:60px;background:url(img/cats_cut.png) 0 50%/auto 100% no-repeat"></span>
+      <span class="ic" style="width:34px;height:60px;background:url(img/cats_cut_s.png) 0 50%/auto 100% no-repeat"></span>
       <div class="t"><span class="k">1枚</span><span class="n">154</span><span class="u">円〜</span>で<br>推しへの手紙が<br>ちょっと特別に！<br><small style="font:400 11px/1.5 'Noto Sans JP';color:#888">ケースなし10枚・このページのクーポン利用時</small></div>
-      <span class="ic" style="width:44px;height:60px;background:url(img/cats_cut.png) 100% 50%/auto 100% no-repeat"></span>
+      <span class="ic" style="width:44px;height:60px;background:url(img/cats_cut_s.png) 100% 50%/auto 100% no-repeat"></span>
     </div>
   </div>
   <div class="pack">
@@ -427,7 +432,7 @@ p,li,dd,span,summary,h2,h3{text-wrap:pretty}
   <h2 class="h2c">猫のポーズは</h2>
   <div class="bignum"><span class="n gtext">5</span><span class="u">ポーズ！</span></div>
   <p class="subc">ファンレターのたびに<br>違う子を1匹ずつ。</p>
-  <div class="blob"><img src="img/cats_cut.png" alt="ポーズの違う5匹の猫の文香"></div>
+  <div class="blob"><img src="img/cats_cut_s.png" alt="ポーズの違う5匹の猫の文香"></div>
 </section>
 
 
