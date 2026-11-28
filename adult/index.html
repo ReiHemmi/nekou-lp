@@ -1,0 +1,585 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>NeKou 大人の推し活に、香る和紙の猫の文香</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Shippori+Mincho:wght@500;600;700&family=Jost:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+:root{--ink:#484b4b;--sub:#777;--lav:#8e6aae;--lav-d:#6f4f93;--lav-l:#f4eef8;--cream:#fffcf5;--cream2:#fdfaea;--rose:#c98aa8;--maxw:480px}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:#fff;color:var(--ink);font:400 16px/1.8 "Noto Sans JP",sans-serif;word-break:auto-phrase;line-break:strict}
+main{max-width:var(--maxw);margin:0 auto;background:var(--cream);overflow:hidden}
+img{display:block;width:100%;height:auto}
+.min{font-family:"Shippori Mincho",serif}
+.em{color:var(--lav)}
+/* 上の帯（bloomee：このページからお申し込み限定 特別キャンペーン） */
+.topband{background:linear-gradient(90deg,#9b82b8,#b79bc9);color:#fff;text-align:center;padding:7px 10px 6px}
+.topband b{display:block;font:700 15px/1.5 "Noto Sans JP";letter-spacing:.04em}
+.topband small{display:block;font:400 10.5px/1.5 "Noto Sans JP";opacity:.95}
+/* FV */
+.fv{background:linear-gradient(180deg,#fffcf5 0%,#fbf6ef 55%,#f6efe6 100%);padding:16px 0 0;text-align:center;position:relative}
+.fv .tag{display:inline-block;background:var(--lav-l);color:var(--lav-d);font:600 15px/1.5 "Shippori Mincho",serif;padding:3px 12px;letter-spacing:.06em}
+.fv h1{margin:8px 0 0;font:600 34px/1.35 "Shippori Mincho",serif;letter-spacing:.08em;color:#2f2f2f}
+.fv h1 .em{color:var(--lav)}
+.fv .sub{margin:6px 0 0;font:500 14px/1.6 "Noto Sans JP";color:var(--ink);letter-spacing:.04em}
+.fv .seal{position:absolute;right:12px;top:10px;width:78px;height:78px;border-radius:50%;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;font:700 11px/1.35 "Noto Sans JP";color:var(--lav-d);z-index:2}
+.fv .seal b{font:700 15px/1.2 "Noto Sans JP";color:var(--rose)}
+.fv .ph{margin:12px 0 0;position:relative}
+.fv .ph img{aspect-ratio:900/629;object-fit:cover}
+.badges{display:flex;justify-content:center;gap:8px;margin:-34px 12px 0;position:relative;z-index:2}
+.badge{width:31%;aspect-ratio:1/.8;border-radius:50%;background:#fff;border:1px solid #e6dcc8;box-shadow:0 2px 6px rgba(0,0,0,.06);display:flex;flex-direction:column;justify-content:center;align-items:center;font:600 11px/1.35 "Shippori Mincho",serif;color:#5a4a3a}
+.badge b{font:600 17px/1.2 "Shippori Mincho",serif;color:var(--lav-d)}
+.price{margin:12px 16px 0;background:#fff;border:1px solid #eadff0;padding:8px 10px}
+.price li{list-style:none;display:flex;align-items:center;justify-content:center;gap:8px;padding:5px 0;font:500 13px/1.4 "Noto Sans JP"}
+.price ul{margin:0;padding:0}
+.price li+li{border-top:1px dashed #e6dfe8}
+.price .nm{width:84px;text-align:left;color:var(--ink)}
+.price .was{color:#999;text-decoration:line-through;font:400 14px "Jost"}
+.price .now{font:500 24px/1 "Jost";color:var(--lav-d)}
+.price .now small{font:500 12px "Noto Sans JP"}
+.price .off{font:700 11px/1 "Noto Sans JP";color:#fff;background:var(--rose);padding:3px 5px}
+.cta{display:block;margin:12px 16px 0;text-decoration:none;position:relative}
+.cta .pill{display:inline-block;position:relative;z-index:2;margin:0 auto -10px;background:#fff;color:var(--lav-d);border:1px solid var(--lav);border-radius:999px;font:700 12px/1.6 "Noto Sans JP";padding:1px 14px}
+.cta .btn{display:flex;align-items:center;justify-content:center;gap:10px;background:linear-gradient(180deg,#a07cc0,#8562a8);color:#fff;border-radius:999px;padding:17px 18px 15px;font:600 20px/1.3 "Shippori Mincho",serif;letter-spacing:.06em;box-shadow:0 4px 0 #6f4f93}
+.cta .btn::after{content:"";width:0;height:0;border-left:8px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.ctawrap{text-align:center;padding-bottom:6px}
+.cats{margin:14px 0 0;padding:14px 0 18px;background:var(--lav-l)}
+.cats p{margin:0 0 8px;font:600 14px/1.5 "Shippori Mincho",serif;color:var(--lav-d);letter-spacing:.08em}
+.cats img{width:86%;margin:0 auto}
+/* 悩み（bloomee：写真に吹き出しのラベル） */
+.worry{background:#efeaf3;padding:30px 0 0;text-align:center}
+.worry h2{margin:0 16px;font:600 22px/1.55 "Shippori Mincho",serif;color:#2f2f2f;letter-spacing:.06em}
+.wgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px 10px;margin:18px 12px 0}
+.wgrid .w{position:relative}
+.wgrid .w:nth-child(3){grid-column:1/3;width:62%;margin:0 auto}
+.slot.ph{padding:0;background:none;overflow:hidden;border-radius:6px;box-shadow:0 3px 8px rgba(80,60,100,.12)}
+.slot.ph img{width:100%;height:100%;object-fit:cover;display:block}
+.slot{background:#d9d4dd;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;font:400 11px/1.4 "Noto Sans JP";color:#777;padding:8px}
+.wgrid .lb{position:absolute;left:50%;top:-8px;transform:translateX(-50%);white-space:nowrap;background:#5b4c6b;color:#fff;font:500 12.5px/1.5 "Noto Sans JP";padding:3px 11px;border-radius:999px}
+.wgrid .lb::after{content:"";position:absolute;left:50%;bottom:-5px;margin-left:-5px;border-top:6px solid #5b4c6b;border-left:5px solid transparent;border-right:5px solid transparent}
+.worry .tri{height:34px;margin-top:22px;background:var(--cream);clip-path:polygon(0 0,50% 100%,100% 0,100% 100%,0 100%)}
+.sonna{background:var(--cream);padding:14px 0 26px;text-align:center}
+.sonna .q{font:600 20px/1.5 "Shippori Mincho",serif;color:var(--lav);letter-spacing:.1em}
+.sonna .q::before,.sonna .q::after{content:"＼";color:var(--rose);margin:0 6px;font-size:16px}
+.sonna .q::after{content:"／"}
+.sonna .lg small{display:block;font:500 13px/1.6 "Shippori Mincho",serif;margin-top:10px}
+.sonna .lg b{display:block;font:500 34px/1.2 "Jost";letter-spacing:.06em;color:#2f2f2f}
+.sonna .lg i{display:block;width:60px;height:2px;background:var(--lav);margin:6px auto 0}
+/* 悩みごとの解決 */
+.solve{background:var(--cream);padding:6px 0 30px;text-align:center}
+.solve .lb2{display:inline-block;background:#5b4c6b;color:#fff;font:500 14px/1.5 "Noto Sans JP";padding:5px 16px;border-radius:999px}
+.solve .nara{margin:16px 0 0;font:600 15px/1.4 "Shippori Mincho",serif;color:var(--rose);letter-spacing:.08em}
+.solve h3{margin:2px 16px 0;font:600 25px/1.5 "Shippori Mincho",serif;color:#2f2f2f;letter-spacing:.06em}
+.solve h3 .em{font-size:29px}
+.solve .pic{margin:16px 0 0}
+.solve .pic img{aspect-ratio:16/10;object-fit:cover;object-position:62% 50%}
+.solve p.tx{margin:14px 20px 0;text-align:left;font:400 15px/1.85 "Noto Sans JP"}
+.solve p.tx b{color:var(--lav-d)}
+.note{margin:6px 20px 0;text-align:left;font:400 11px/1.6 "Noto Sans JP";color:var(--sub)}
+
+/* ===== FV v2 ===== */
+.topband{background:linear-gradient(90deg,#8d74b0 0%,#a98cc6 55%,#c3a2cf 100%)!important;padding:7px 10px 6px}
+.topband b{font:700 15px/1.4 "Noto Sans JP"}
+.topband i{display:block;height:1px;margin:4px 34px 3px;background:linear-gradient(90deg,transparent,#fff 15%,#fff 85%,transparent)}
+.fv2{position:relative;background:linear-gradient(180deg,#fff 0%,#fff 52%,#fdf3e4 70%,#fff4dc 100%);text-align:left;padding-bottom:0}
+.fv2 .head{padding:20px 18px 0;position:relative;z-index:4}
+.fv2 .tag{display:inline-block;background:#f6eff9;color:#8a5fae;font:600 16px/1.5 "Shippori Mincho",serif;padding:4px 12px 3px;letter-spacing:.06em}
+.fv2 h1{margin:10px 0 0;font:800 33px/1.32 "Shippori Mincho",serif;color:#1f1f1f;letter-spacing:.07em}
+.fv2 h1 span{display:block}
+.fv2 h1 small{font-size:.78em;letter-spacing:.02em}
+.fv2 .seal{position:absolute;right:8px;top:96px;width:98px;height:98px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#fff 60%,#fbf7f2 100%);box-shadow:0 6px 16px rgba(80,60,40,.16),0 1px 3px rgba(80,60,40,.08);display:flex;flex-direction:column;align-items:center;justify-content:center;z-index:3}
+.fv2 .seal b{font:900 18px/1.25 "Noto Sans JP";letter-spacing:.04em;background:linear-gradient(180deg,#c27aa6,#8a5fae);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:12px}
+.fv2 .seal img{width:30px;margin-top:4px;filter:drop-shadow(0 1px 1px rgba(0,0,0,.15))}
+.fv2 .seal .bub{position:absolute;right:0;top:-34px;width:52px;height:52px;border-radius:44px/30px;background:linear-gradient(160deg,#c9a0d6,#9a72bd);color:#fff;font:700 11px/1.3 "Noto Sans JP";display:flex;align-items:center;justify-content:center;text-align:center;box-shadow:0 2px 5px rgba(90,60,120,.25)}
+.fv2 .seal .bub::after{content:"";position:absolute;left:6px;bottom:2px;border-top:10px solid #9e77bf;border-left:8px solid transparent;transform:rotate(25deg)}
+.fv2 .ph{margin:14px 0 0;position:relative}
+.fv2 .ph img{aspect-ratio:900/629;object-fit:cover;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 78%,transparent 100%),linear-gradient(90deg,transparent 0,#000 6%,#000 94%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 78%,transparent 100%);}
+.fv2 .badges{display:flex;justify-content:center;gap:6px;margin:-34px 10px 0;position:relative;z-index:2}
+.fv2 .bd{flex:1;padding:3px;border-radius:50%;background:linear-gradient(160deg,#d8b778 0%,#fff6dc 38%,#ffffff 50%,#f2dcaa 66%,#c9a15f 100%);box-shadow:0 4px 10px rgba(150,110,50,.18)}
+.fv2 .bd{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;min-height:64px;position:relative}
+.fv2 .bd::before{content:"";position:absolute;inset:3px;border-radius:41px/27px;background:radial-gradient(ellipse at 50% 45%,#fff 55%,#fdf6ea 100%);z-index:0}
+.fv2 .bd>*{position:relative;z-index:1}
+.fv2 .bd span{font:600 10.5px/1.25 "Shippori Mincho",serif;color:#7b5a3a;letter-spacing:.02em}
+.fv2 .bd b{font:800 21px/1.12 "Shippori Mincho",serif;color:#8a4f9e;letter-spacing:.02em}
+.fv2 .bd b small{font-size:.6em}
+.fv2 .bd b sup{font:500 7.5px/1 "Noto Sans JP";color:#9a8a78;vertical-align:top;margin-left:1px;letter-spacing:0}
+.fv2 .fnote{margin:6px 16px 0;font:400 9.5px/1.5 "Noto Sans JP";color:#7a6e62}
+.fv2 .cv{display:block;margin:14px 12px 0;text-decoration:none;position:relative;text-align:center}
+.fv2 .cv .tab{position:relative;z-index:3;display:inline-block;background:#fff;color:#8a5fae;border:1.5px solid #a67fc4;border-radius:999px;font:700 13px/1.5 "Noto Sans JP";padding:1px 16px;margin-bottom:-12px;letter-spacing:.04em}
+.fv2 .cv .tab em{font-style:normal;font-size:17px;color:#b05f9e}
+.fv2 .cv .btn{position:relative;display:flex;align-items:center;justify-content:center;height:68px;border-radius:14px;background:linear-gradient(180deg,#a782c6 0%,#8d66b2 100%);box-shadow:inset 0 0 0 3px #8d66b2,inset 0 0 0 4.5px rgba(255,255,255,.85),0 5px 0 #6b4a8e,0 8px 14px rgba(90,60,120,.25)}
+.fv2 .cv .btn::after{content:"";position:absolute;right:18px;top:50%;margin-top:-7px;border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.fv2 .cv .t{font:600 17px/1 "Shippori Mincho",serif;color:#fff;letter-spacing:.06em;padding-left:30px}
+.fv2 .cv .t em{font-style:normal;font-size:24px;font-weight:800;color:#fff6b8;margin-right:2px}
+.fv2 .cv .deco{position:absolute;left:16px;bottom:9px;width:40px;opacity:.92}
+.fv2 .ribbon{position:relative;margin:22px 30px 0;text-align:center;z-index:2}
+.fv2 .ribbon span{position:relative;display:block;background:linear-gradient(180deg,#b998cf,#a283c0);color:#fff;font:600 15px/2.2 "Shippori Mincho",serif;letter-spacing:.1em;box-shadow:0 2px 4px rgba(90,60,120,.2)}
+.fv2 .ribbon::before,.fv2 .ribbon::after{content:"";position:absolute;top:8px;width:26px;height:33px;background:#8e70ad;z-index:-1}
+.fv2 .ribbon::before{left:-18px;clip-path:polygon(0 0,100% 0,100% 100%,0 100%,35% 50%)}
+.fv2 .ribbon::after{right:-18px;clip-path:polygon(0 0,100% 0,65% 50%,100% 100%,0 100%)}
+.fv2 .catsband{margin-top:-18px;padding:30px 0 16px;background:linear-gradient(180deg,#f7eef5,#f1e7f3)}
+.fv2 .catsband img{width:78%;margin:0 auto}
+
+/* 悩み・解決もベタ塗りをやめる（V-101） */
+.worry{background:linear-gradient(180deg,#f2edf6 0%,#ece5f2 60%,#e9e1f0 100%)!important}
+.worry h2{text-shadow:0 1px 0 #fff}
+.wgrid .lb{box-shadow:0 2px 4px rgba(50,30,70,.25);background:linear-gradient(180deg,#6a5a7d,#54466a)!important}
+.sonna{background:linear-gradient(180deg,#fffcf5,#fff)!important}
+.solve{background:linear-gradient(180deg,#fff 0%,#fff 55%,#fdf6ea 100%)!important}
+.solve .lb2{background:linear-gradient(180deg,#6a5a7d,#54466a)!important;box-shadow:0 2px 4px rgba(50,30,70,.25)}
+.solve .pic img{-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 90%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 10%,#000 90%,transparent 100%)}
+
+/* 11/27 修正3：札はボタンの上の辺にまたがせる（V-110）・送料無料の印の中央揃え・吹き出しは1行の角丸で円の上中央 */
+.fv2 .cv{margin-top:26px!important}
+.fv2 .cv .tab{position:absolute!important;left:50%;top:0;transform:translate(-50%,-50%);margin:0!important;white-space:nowrap}
+.fv2 .seal{flex-direction:column}
+.fv2 .seal b{font:900 21px/1.25 "Noto Sans JP"!important;margin-top:4px!important;text-align:center;letter-spacing:.06em}
+.fv2 .seal .bub{right:auto!important;left:50%;top:-11px!important;transform:translateX(-50%);width:auto!important;height:auto!important;white-space:nowrap;border-radius:8px!important;padding:3px 10px;font:700 11.5px/1.5 "Noto Sans JP"!important}
+.fv2 .seal .bub::after{left:50%!important;bottom:-6px!important;margin-left:-5px;border-top:6px solid #9a72bd!important;border-left:5px solid transparent!important;border-right:5px solid transparent;transform:none!important}
+
+/* 推し活の5つの例（D-82：推し友・自分の時間を前に） */
+.scenes{background:linear-gradient(180deg,#fdf6ea 0%,#fffcf5 22%,#f7f1f8 100%);padding:8px 0 34px;text-align:center}
+.scenes .kick{display:inline-block;font:600 14px/1.5 "Shippori Mincho",serif;color:var(--lav-d);letter-spacing:.14em;padding:0 22px;background:linear-gradient(90deg,transparent,#efe6f5 18%,#efe6f5 82%,transparent)}
+.scenes h2{margin:8px 16px 0;font:600 25px/1.55 "Shippori Mincho",serif;color:#2f2f2f;letter-spacing:.06em}
+.scenes h2 small{font-size:.72em}
+.scenes h2 .em{font-size:1.12em;font-weight:700}
+.scenes .pp{margin:18px 0 0}
+.scenes .pp img{aspect-ratio:auto;object-fit:initial;-webkit-mask-image:linear-gradient(180deg,#000 0,#000 88%,transparent 100%);mask-image:linear-gradient(180deg,#000 0,#000 88%,transparent 100%)}
+.scenes .pp figcaption{margin:-6px 16px 0;font:400 10px/1.5 "Noto Sans JP";color:#9a8f86;text-align:right;position:relative}
+.sc{position:relative;margin:16px 14px 0;padding:2px;border-radius:18px;background:linear-gradient(160deg,#d8b778 0%,#fff6dc 38%,#ffffff 50%,#f2dcaa 66%,#c9a15f 100%);box-shadow:0 4px 12px rgba(120,90,50,.12);text-align:left}
+.sc .in{display:grid;grid-template-columns:54px 1fr;gap:0 10px;align-items:start;border-radius:16px;padding:14px 14px 14px 10px;background:radial-gradient(ellipse at 30% 20%,#fff 55%,#fdf8ef 100%)}
+.sc .no{grid-row:1/4;font:700 30px/1 "Shippori Mincho",serif;text-align:center;padding-top:6px;background:linear-gradient(180deg,#b394cc,#7d5a9f);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.02em}
+.sc .no small{display:block;font:600 9px/1.6 "Jost",sans-serif;letter-spacing:.16em;color:#a98bc0;-webkit-text-fill-color:#a98bc0}
+.sc .who{justify-self:start;display:inline-block;font:500 11.5px/1.6 "Noto Sans JP";color:#fff;background:linear-gradient(180deg,#a888c4,#8d6bb0);border-radius:999px;padding:0 10px;letter-spacing:.04em}
+.sc h3{margin:4px 0 0;font:600 18px/1.5 "Shippori Mincho",serif;color:#2f2f2f;letter-spacing:.04em}
+.sc h3 .em{font-weight:700}
+.sc p{margin:4px 0 0;font:400 14.5px/1.8 "Noto Sans JP";color:var(--ink)}
+.sc.top .in{background:radial-gradient(ellipse at 30% 20%,#fff 50%,#f8f1fa 100%)}
+.scenes .note2{margin:14px 18px 0;text-align:left;font:400 11.5px/1.7 "Noto Sans JP";color:#7a6e62}
+/* 11/27 全体（解決2・3／漫画／声／クーポン／こだわり／使い方／Q&A／最後） */
+.solve{padding-top:30px}
+.solve .pic.plain img{-webkit-mask-image:none;mask-image:none;aspect-ratio:auto;object-fit:initial;width:86%;margin:0 auto}
+.ctaw{background:none!important;padding:0 0 6px;text-align:center}
+.kick{display:inline-block;font:600 14px/1.5 "Shippori Mincho",serif;color:var(--lav-d);letter-spacing:.14em;padding:0 22px;background:linear-gradient(90deg,transparent,#efe6f5 18%,#efe6f5 82%,transparent)}
+.manga,.voice,.offer,.kodawari,.howto,.before,.qa,.last{padding:36px 0 34px;text-align:center}
+.manga h2,.voice h2,.offer h2,.kodawari h2,.howto h2,.last h2{margin:8px 14px 0;font:600 23px/1.5 "Shippori Mincho",serif;color:#2f2f2f;letter-spacing:.05em}
+.manga h2 .em,.voice h2 .em,.kodawari h2 .em,.howto h2 .em{font-weight:700}
+.manga{background:linear-gradient(180deg,#f7f1f8,#fffcf5)}
+.comic{position:relative;margin:18px 12px 0}
+.comic .slot{aspect-ratio:10/26}
+.comic img{border-radius:6px;box-shadow:0 3px 10px rgba(80,60,100,.12)}
+.fk{position:absolute;background:#fff;border:1.5px solid #5b4c6b;border-radius:18px;padding:6px 10px;font:500 12.5px/1.55 "Noto Sans JP";color:#333;text-align:left;box-shadow:0 2px 4px rgba(0,0,0,.08);white-space:nowrap}
+.imgnote{margin:6px 14px 0;text-align:right;font:400 10px/1.5 "Noto Sans JP";color:#9a8f86}
+.voice{background:linear-gradient(180deg,#fffcf5,#fbf3f7)}
+.vc{margin:16px 14px 0;padding:2px;border-radius:16px;background:linear-gradient(160deg,#d8b778 0%,#fff6dc 38%,#ffffff 50%,#f2dcaa 66%,#c9a15f 100%);box-shadow:0 4px 12px rgba(120,90,50,.1);text-align:left}
+.vc .in{border-radius:14px;padding:14px 16px 12px;background:radial-gradient(ellipse at 30% 20%,#fff 55%,#fdf8ef 100%);position:relative}
+.vc .vh{display:block;font:700 17px/1.5 "Shippori Mincho",serif;color:#2f2f2f}
+.vc p{margin:6px 0 0;font:400 14.5px/1.8 "Noto Sans JP"}
+.vc .who{display:block;margin-top:4px;font:400 11px/1.5 "Noto Sans JP";color:#9a8f86;text-align:right}
+.offer{background:linear-gradient(180deg,#fbf3f7 0%,#f4eef8 40%,#fffcf5 100%)}
+.offer h2 small{font-size:.66em;font-weight:600}
+.offer h2 .big{font:800 54px/1 "Shippori Mincho",serif;background:linear-gradient(180deg,#b394cc,#7d5a9f);-webkit-background-clip:text;background-clip:text;color:transparent;margin:0 2px}
+.offer h2 .em{font-size:1.25em;font-weight:800}
+.plans{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:24px 10px 0}
+.plan{position:relative;padding:2px;border-radius:16px;background:linear-gradient(160deg,#d8b778 0%,#fff6dc 38%,#ffffff 50%,#f2dcaa 66%,#c9a15f 100%);box-shadow:0 4px 12px rgba(120,90,50,.12)}
+.plan.best{background:linear-gradient(160deg,#a888c4 0%,#efe4f7 40%,#fff 50%,#d9c6ea 66%,#8d6bb0 100%)}
+.plan .pin{height:100%;border-radius:14px;background:radial-gradient(ellipse at 50% 15%,#fff 55%,#fbf6ef 100%);padding:16px 8px 12px;display:flex;flex-direction:column;align-items:center}
+.plan .crown{position:absolute;left:50%;top:0;transform:translate(-50%,-50%);z-index:2;white-space:nowrap;background:linear-gradient(180deg,#a888c4,#8d6bb0);color:#fff;font:700 12px/1.6 "Noto Sans JP";padding:1px 12px;border-radius:999px;box-shadow:0 2px 4px rgba(90,60,120,.25)}
+.plan img{height:78px;width:auto;max-width:100%;object-fit:contain}
+.plan .pt{margin:6px 0 0;font:600 15px/1.4 "Shippori Mincho",serif;color:#2f2f2f}
+.plan .pt b{font-size:22px;color:var(--lav-d)}
+.plan .pd{margin:2px 0 0;font:400 10.5px/1.5 "Noto Sans JP";color:#777}
+.plan .pr{margin:8px 0 0;font:500 12px/1.3 "Noto Sans JP";color:#555}
+.plan .pr s{display:block;color:#999;font-size:11px}
+.plan .pr span{display:inline-block;background:#b05f9e;color:#fff;font-size:10.5px;padding:0 6px;border-radius:4px;margin-right:4px;vertical-align:4px}
+.plan .pr b{font:800 26px/1 "Shippori Mincho",serif;color:#b05f9e}
+.plan .per{margin:4px 0 0;font:400 11px/1.4 "Noto Sans JP";color:#555}
+.plan .per b{font-size:15px;color:#b05f9e}
+.plan .code{margin:8px 0 0;display:flex;align-items:center;gap:4px;background:#fff;border:1px dashed #b9a0d0;border-radius:8px;padding:4px 6px;font:400 10px/1.3 "Noto Sans JP";color:#777;width:100%}
+.plan .code b{font:700 13px/1 "Jost",sans-serif;color:var(--lav-d);letter-spacing:.04em}
+.plan .code button{margin-left:auto;border:0;background:var(--lav-l);color:var(--lav-d);font:700 10px/1 "Noto Sans JP";padding:5px 6px;border-radius:6px}
+.plan .go{margin-top:auto;display:block;width:100%;text-decoration:none;border-radius:10px;background:linear-gradient(180deg,#a782c6,#8d66b2);color:#fff;font:700 11.5px/1.4 "Noto Sans JP";padding:9px 4px;box-shadow:inset 0 0 0 2px #8d66b2,inset 0 0 0 3px rgba(255,255,255,.8),0 3px 0 #6b4a8e}
+.plan .code+.go{margin-top:8px}
+.plan .go.sub{background:linear-gradient(180deg,#fff,#f4eef8);color:var(--lav-d);box-shadow:inset 0 0 0 1.5px #a67fc4,0 3px 0 #cdb8de}
+.offer .two{margin:16px 14px 0;font:500 14px/1.6 "Noto Sans JP"}
+.offer .two b{color:#b05f9e;font-size:17px;margin:0 2px}
+.offer .two small{display:block;font-size:11.5px;color:#777}
+.offer .terms{margin:12px 18px 0;padding:0;list-style:none;text-align:left;font:400 11.5px/1.75 "Noto Sans JP";color:#666}
+.offer .terms li::before{content:"・"}
+.assure{margin:14px 14px 0;background:#fff;border-radius:12px;padding:10px 14px;box-shadow:0 2px 8px rgba(120,90,50,.08)}
+.assure b{display:block;font:700 14px/1.5 "Shippori Mincho",serif;color:var(--lav-d)}
+.assure span{font:400 12px/1.6 "Noto Sans JP";color:#666}
+.kodawari{background:linear-gradient(180deg,#fffcf5,#fdf6ea)}
+.mk{margin:18px 14px 0;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 3px 10px rgba(120,90,50,.1)}
+.mk figcaption{font:400 11px/1.5 "Noto Sans JP";color:#888;padding:6px 8px}
+.pt3{margin:24px 14px 0;text-align:left}
+.pt3 .pn{display:inline-block;font:600 11px/1 "Jost",sans-serif;letter-spacing:.14em;color:#a98bc0}
+.pt3 .pn b{font:700 26px/1 "Shippori Mincho",serif;margin-left:4px;background:linear-gradient(180deg,#b394cc,#7d5a9f);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pt3 h3{margin:4px 0 0;font:600 19px/1.5 "Shippori Mincho",serif;color:#2f2f2f}
+.pt3 img{margin-top:10px;border-radius:10px;aspect-ratio:16/9;object-fit:cover}
+.pt3 p{margin:8px 0 0;font:400 14.5px/1.85 "Noto Sans JP"}
+.howto{background:linear-gradient(180deg,#fdf6ea,#f7f1f8)}
+.steps{margin:18px 12px 0;display:grid;gap:14px}
+.st{background:#fff;border-radius:14px;padding:12px;box-shadow:0 3px 10px rgba(80,60,100,.08)}
+.st .no{display:block;font:600 11px/1 "Jost",sans-serif;letter-spacing:.14em;color:#a98bc0;text-align:left}
+.st .no b{font:700 22px/1 "Shippori Mincho",serif;color:var(--lav-d);margin-left:4px}
+.st img{margin-top:8px;border-radius:8px;aspect-ratio:16/9;object-fit:cover}
+.st p{margin:8px 0 0;font:600 15px/1.5 "Shippori Mincho",serif;color:#2f2f2f}
+.howto .more{margin:14px 18px 0;text-align:left;font:400 12.5px/1.75 "Noto Sans JP";color:#666}
+.before{background:#f7f1f8;padding-top:10px}
+.before h2{margin:0 14px;font:600 17px/1.5 "Shippori Mincho",serif;color:var(--lav-d)}
+.before ul{margin:10px 18px 0;padding-left:1.1em;text-align:left;font:400 12.5px/1.75 "Noto Sans JP";color:#555}
+.qa{background:linear-gradient(180deg,#f7f1f8,#fffcf5)}
+.qa h2{margin:0 14px 14px;font:600 21px/1.5 "Shippori Mincho",serif;color:#2f2f2f}
+.qa details{margin:0 14px 8px;background:#fff;border-radius:12px;text-align:left;box-shadow:0 2px 6px rgba(80,60,100,.06)}
+.qa summary{list-style:none;cursor:pointer;padding:12px 34px 12px 40px;position:relative;font:600 14px/1.6 "Noto Sans JP";color:#333}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::before{content:"Q";position:absolute;left:14px;top:10px;font:700 18px/1.3 "Shippori Mincho",serif;color:var(--lav)}
+.qa summary::after{content:"";position:absolute;right:14px;top:50%;width:8px;height:8px;margin-top:-6px;border-right:2px solid #a98bc0;border-bottom:2px solid #a98bc0;transform:rotate(45deg)}
+.qa details[open] summary::after{transform:rotate(-135deg);margin-top:-2px}
+.qa details p{margin:0;padding:0 16px 14px 40px;font:400 13.5px/1.8 "Noto Sans JP";color:#555}
+.last{background:linear-gradient(180deg,#fffcf5,#f4eef8);padding-bottom:20px}
+.last h2{font-size:27px;line-height:1.55}
+.last h2 small{font-size:.7em}
+.last h2 .em{font-weight:700}
+.ft{background:#5b4c6b;color:#eee;padding:24px 18px 96px;font:400 11px/1.7 "Noto Sans JP"}
+.ft .fl{font:500 20px/1 "Jost",sans-serif;letter-spacing:.1em;color:#fff;text-align:center;margin:0 0 10px}
+.ft .privacy{margin-top:12px;border-top:1px solid rgba(255,255,255,.2);padding-top:10px}
+.ft .privacy p{margin:4px 0 0;font-size:10px;line-height:1.7;opacity:.85}
+.ft a{color:#fff}
+.ft .cp{text-align:center;margin-top:14px;opacity:.7}
+.fixed{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:8px 10px calc(8px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(255,252,245,0),rgba(255,252,245,.95) 30%);transform:translateY(110%);transition:transform .25s}
+.fixed.on{transform:none}
+.fixed .cv1{display:block;max-width:460px;margin:0 auto;text-decoration:none;text-align:center;border-radius:12px;background:linear-gradient(180deg,#a782c6,#8d66b2);box-shadow:inset 0 0 0 2px #8d66b2,inset 0 0 0 3.5px rgba(255,255,255,.85),0 4px 0 #6b4a8e;padding:6px 0 8px}
+.fixed .cv1 span{display:block;font:700 10.5px/1.4 "Noto Sans JP";color:#f3e9fb}
+.fixed .cv1 b{font:600 16px/1.3 "Shippori Mincho",serif;color:#fff}
+.fixed .cv1 em{font-style:normal;font-weight:800;font-size:19px;color:#fff6b8}
+
+
+/* 11/27 修正：使い方は写真を使わず3列（前の段の写真と重ねない V-74）・クーポンの枠のはみ出し */
+.steps{grid-template-columns:repeat(3,1fr)!important;gap:8px!important;margin:18px 10px 0!important}
+.st{padding:12px 6px 10px!important;display:flex;flex-direction:column;align-items:center;text-align:center}
+.st .ic{width:56px;height:56px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#fff 50%,#f4eef8 100%);box-shadow:0 0 0 1.5px #e2d4ee;display:flex;align-items:center;justify-content:center}
+.st .ic img{width:auto;height:38px;margin:0;aspect-ratio:auto;border-radius:0}
+.st .no{margin-top:8px;text-align:center!important}
+.st p{font-size:13.5px!important;line-height:1.5!important}
+.plan{min-width:0}
+.plan .pin{padding:16px 6px 10px}
+.plan .pt{font-size:14px}
+.plan .pt b{font-size:20px}
+.plan .pd{font-size:9.5px}
+.plan .pr b{font-size:23px}
+.plan .pr span{font-size:9.5px;padding:0 4px}
+.plan .code{flex-wrap:wrap;justify-content:center;padding:4px}
+.plan .code>span{width:100%;text-align:center}
+.plan .code b{font-size:12.5px}
+.plan .code button{margin-left:4px}
+.plan .go{font-size:11px;padding:8px 2px}
+.ft{padding-bottom:110px}
+.plan .pr s.q{text-decoration:none;color:#777}
+
+/* 11/27 検査R1の直し */
+body{text-wrap:pretty}
+h1,h2,h3{text-wrap:balance}
+.sc p,.vc p,.solve p.tx,.pt3 p{font-size:15.5px!important}
+.qa details p{font-size:14.5px}
+.plan .pd{font-size:10.5px}
+.plan .go{font-size:13px!important;padding:11px 2px!important}
+.kick.story{font:600 13px/1.6 "Jost",sans-serif;letter-spacing:.3em}
+.comic img{border:2px solid #2b2b2b;border-radius:2px}
+.fk::after{content:"";position:absolute;bottom:-8px;left:22px;border-top:8px solid #5b4c6b;border-left:5px solid transparent;border-right:5px solid transparent}
+.fk::before{content:"";position:absolute;bottom:-5.5px;left:23.5px;z-index:1;border-top:6.5px solid #fff;border-left:3.5px solid transparent;border-right:3.5px solid transparent}
+.fk[style*="right"]::after{left:auto;right:22px}.fk[style*="right"]::before{left:auto;right:23.5px}
+.cmp{padding:34px 0 10px;text-align:center;background:#fbf3f7}
+.cmp h2{margin:8px 14px 0;font:600 23px/1.5 "Shippori Mincho",serif;color:#2f2f2f}
+.cmp h2 .em{font-weight:700}
+.cmp table{width:calc(100% - 28px);margin:16px 14px 0;border-collapse:separate;border-spacing:0;font:400 13.5px/1.5 "Noto Sans JP";background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 3px 10px rgba(80,60,100,.08)}
+.cmp th,.cmp td{padding:10px 6px;border-bottom:1px solid #f0e8f4}
+.cmp tbody th{font-weight:500;color:#666;width:24%}
+.cmp thead th{font-weight:700;background:#f7f2ea;color:#666}
+.cmp thead th.me{background:linear-gradient(180deg,#a888c4,#8d6bb0);color:#fff}
+.cmp td.me{background:#f8f2fb;color:var(--lav-d);font-weight:700;font-size:15px}
+.cmp small{font-size:11px;color:#888}
+.cmp .note3{margin:8px 16px 0;text-align:left;font:400 11px/1.6 "Noto Sans JP";color:#888}
+
+/* 11/28 4点の直し：FVの商品の正体／買い方3ステップ／金の枠を減らす／声の作り */
+.fv2 .what{max-width:240px;margin:8px 0 0;font:600 14px/1.5 "Shippori Mincho",serif;color:#4a3d5a;letter-spacing:.03em}
+.fv2 .what b{color:#8a5fae;font-weight:700}
+.fv2 .what .yen{display:table;margin:6px 0 0;font:500 12px/1 "Noto Sans JP";color:#555;background:#fff;border-radius:999px;padding:4px 9px;box-shadow:0 1px 3px rgba(90,60,120,.15)}
+.fv2 .what .yen b{font:700 17px/1 "Shippori Mincho",serif;color:#8a5fae;margin:0 1px}
+.fv2 .what .yen sup{font-size:8px;color:#999}
+.fv2 .ph{margin-top:2px!important}
+/* 金の枠はFVのバッジだけ（V-61） */
+.sc{padding:0!important;background:none!important;box-shadow:none!important;border-radius:0!important;margin:0 14px!important;border-bottom:1px solid #e8dfd2}
+.sc .in{background:none!important;border-radius:0!important;padding:16px 4px 16px 0!important}
+.sc:first-of-type{margin-top:12px!important}
+.scenes .sc.top .in{background:none!important}
+.plan,.plan.best{background:#fff!important;padding:0!important;box-shadow:0 2px 0 #e6dbef,0 6px 16px rgba(90,60,120,.10)!important}
+.plan.best{box-shadow:0 0 0 2px #a888c4,0 6px 16px rgba(90,60,120,.14)!important}
+.plan .pin{background:none!important}
+.plan .pr b,.plan .per b{color:var(--lav-d)!important}
+.plan .pr span{background:var(--lav-d)!important}
+/* 声：アイコン＋吹き出し・左右交互（bloomee） */
+.voice{padding-bottom:30px}
+.vb{display:flex;align-items:flex-start;gap:10px;margin:18px 14px 0;text-align:left}
+.vb.r{flex-direction:row-reverse}
+.vb .av{flex:0 0 52px;height:52px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#fff 45%,#efe6f5 100%);box-shadow:0 0 0 1.5px #e2d4ee;display:flex;align-items:center;justify-content:center}
+.vb .av img{width:auto;height:34px}
+.vb .bb{position:relative;flex:1;background:#fff;border-radius:14px;padding:12px 14px 10px;box-shadow:0 2px 10px rgba(90,60,120,.10)}
+.vb .bb::before{content:"";position:absolute;top:18px;left:-7px;border-right:8px solid #fff;border-top:6px solid transparent;border-bottom:6px solid transparent}
+.vb.r .bb::before{left:auto;right:-7px;border-right:0;border-left:8px solid #fff}
+.vb .vh{display:block;font:700 16.5px/1.5 "Shippori Mincho",serif;color:#2f2f2f;padding-bottom:6px;margin-bottom:6px;border-bottom:1px dashed #e2d4ee}
+.vb p{margin:0;font:400 15px/1.8 "Noto Sans JP"}
+.vb p b{color:var(--lav-d)}
+.vb .who{display:block;margin-top:2px;font:400 11px/1.5 "Noto Sans JP";color:#9a8f86;text-align:right}
+/* 買い方3ステップ */
+.howbuy{margin:16px 14px 0;background:#fff;border-radius:14px;padding:14px 14px 12px;text-align:left;box-shadow:0 2px 10px rgba(90,60,120,.08)}
+.howbuy .hb{margin:0 0 8px;font:700 16px/1.5 "Shippori Mincho",serif;color:var(--lav-d);text-align:center}
+.howbuy ol{margin:0;padding:0;list-style:none}
+.howbuy li{display:flex;gap:10px;align-items:flex-start;padding:7px 0;border-top:1px solid #f0e8f4;font:400 13.5px/1.7 "Noto Sans JP";color:#444}
+.howbuy li b{flex:0 0 24px;height:24px;border-radius:50%;background:var(--lav-d);color:#fff;font:700 13px/24px "Shippori Mincho",serif;text-align:center;margin-top:1px}
+.howbuy li em{font-style:normal;font-weight:700;color:var(--lav-d)}
+.howbuy .hn{margin:6px 0 0;font:400 11px/1.6 "Noto Sans JP";color:#888}
+.offer .last1{display:inline-block;margin:10px 14px 0;font:600 13px/1.6 "Noto Sans JP";color:var(--lav-d);background:#fff;border-radius:999px;padding:3px 14px;box-shadow:0 1px 4px rgba(90,60,120,.12)}
+/* 吹き出しのしっぽは話す人の側へ：左の吹き出し＝右下、右の吹き出し＝左下 */
+.fk::after{left:auto!important;right:22px!important}.fk::before{left:auto!important;right:23.5px!important}
+.fk[style*="right"]::after{right:auto!important;left:22px!important}.fk[style*="right"]::before{right:auto!important;left:23.5px!important}
+
+/* 11/28 検査R2の直し：本文16px・FVの外は太さ700まで・Jostをやめる・コード欄の点線をやめる */
+.qa details p,.howbuy li{font-size:15.5px!important}
+.howto .st p{font-size:14.5px!important}
+.plan .pd{font-size:11.5px!important}
+.offer h2 .big,.plan .pr b{font-weight:700!important}
+.sc .no small,.pt3 .pn,.st .no,.kick.story,.plan .code b{font-family:"Shippori Mincho",serif!important}
+.plan .code{border:0!important;background:#f6f0fa!important}
+.offer .last1{border-radius:12px!important;padding:6px 16px!important;line-height:1.5!important}
+.offer .last1 small{font-weight:400;font-size:11.5px;color:#777}
+.solve .pic img[src*="letter_cat_crop"]{aspect-ratio:475/375!important;object-fit:cover}
+</style>
+</head>
+<body>
+<main>
+<div class="topband"><b>このページで配布中のクーポン</b></div>
+
+
+<section class="fv2" id="fv">
+  <div class="head">
+    <span class="tag">大人の推し活に</span>
+    <h1><span>いつもの手紙<small>を</small></span><span>ちょっと特別<small>に</small></span></h1>
+    <p class="what">便箋にはさむ<b>香る和紙の猫</b>の文香</p>
+  </div>
+  <div class="seal"><span class="bub">ポストにお届け</span><b>送料<br>無料</b></div>
+  <figure class="ph"><img src="img/fv_envelope.jpg" alt="封筒からのぞく和紙の猫の文香（実物）"></figure>
+  <div class="badges">
+    <div class="bd"><span>Makuakeで</span><b>148<small>%</small><sup>※1</sup></b><span>達成</span></div>
+    <div class="bd"><span>線香の</span><b>国内最大<sup>※2</sup></b><span>産地・淡路島で製造</span></div>
+    <div class="bd"><span>香料は</span><b>IFRA</b><span>の国際基準</span></div>
+  </div>
+  <p class="fnote">※1 Makuake（2026年2月終了）での目標金額に対する達成率<br>※2 兵庫県ホームページ「線香」（2024年10月更新）より</p>
+  <a class="cv" href="#offer">
+    <span class="tab">送料無料・<em>1</em>セットから</span>
+    <span class="btn"><img class="deco" src="img/cat4_white.png" alt=""><span class="t"><em>最大30%OFF</em>で選ぶ</span></span>
+  </a>
+  <div class="ribbon"><span>5つのポーズからその日の1匹を</span></div>
+  <div class="catsband"><img src="img/cats_cut_s.png" alt="ポーズの違う5匹の猫の文香"></div>
+</section>
+
+<section class="worry" id="worry">
+  <h2>推しへの手紙<br>こんな悩みはありませんか</h2>
+  <div class="wgrid">
+    <div class="w"><span class="lb">いつも同じ便箋で味気ない</span><div class="slot ph"><img src="img/worry1.jpg" alt="いつもの白い便箋と封筒を前にペンを持つ手元（イメージ）" loading="lazy"></div></div>
+    <div class="w"><span class="lb">プレゼントは負担かも</span><div class="slot ph"><img src="img/worry2.jpg" alt="包みかけの贈り物の上で手を止める手元（イメージ）" loading="lazy"></div></div>
+    <div class="w"><span class="lb">手紙ごとに雰囲気を変えたい</span><div class="slot ph"><img src="img/worry3.jpg" alt="チケットの半券と便箋を前に感想の手紙を考える手元（イメージ）" loading="lazy"></div></div>
+  </div>
+  <div class="tri"></div>
+</section>
+<div class="sonna">
+  <div class="q">そんなときは</div>
+  <div class="lg"><small>猫のかたちの和紙の文香</small><b>NeKou</b><i></i></div>
+</div>
+
+<section class="solve" id="solve1">
+  <span class="lb2">いつも同じ便箋で味気ない</span>
+  <p class="nara">NeKouなら</p>
+  <h3>1匹はさむだけで<br><span class="em">開けた瞬間</span>が華やぐ</h3>
+  <figure class="pic"><img src="img/letter_cat_crop.jpg" alt="便箋の上にのせた和紙の猫の文香（実物）"></figure>
+  <p class="tx">書き終えた便箋にNeKouを<b>1匹だけ</b>。手紙はそのままで、封を開けると小さな猫がのぞき<b>お香の香り</b>が届きます。</p>
+  <div class="fv2" style="background:none;padding-bottom:10px"><a class="cv" href="#offer"><span class="tab">送料無料・<em>1</em>セットから</span><span class="btn"><img class="deco" src="img/cat4_white.png" alt=""><span class="t"><em>最大30%OFF</em>で選ぶ</span></span></a></div>
+</section>
+
+
+<section class="solve" id="solve2">
+  <span class="lb2">プレゼントは負担かも</span>
+  <p class="nara">NeKouなら</p>
+  <h3>紙1枚だから<br><span class="em">気軽に</span>添えられる</h3>
+  <figure class="pic plain"><img src="img/size_cats.jpg" alt="5匹の猫の大きさ（高さ50〜65mm）" loading="lazy"></figure>
+  <p class="tx">物を贈るほど大げさにならず、便箋に<b>1枚はさむだけ</b>。<b>厚みも重さもほとんどなく</b>郵便料金もほとんど変わりません。</p>
+</section>
+<section class="solve" id="solve3">
+  <span class="lb2">手紙ごとに雰囲気を変えたい</span>
+  <p class="nara">NeKouなら</p>
+  <h3>5つのポーズから<br><span class="em">その日の1匹</span>を</h3>
+  <figure class="pic plain"><img src="img/poses.png" alt="ポーズの違う5匹のNeKou" loading="lazy"></figure>
+  <p class="tx">ポーズの違う5匹から推しや手紙の内容に合わせて選べます。<b>次の手紙には違う子</b>を。</p>
+  <div class="fv2 ctaw"><a class="cv" href="#offer"><span class="tab">送料無料・<em>1</em>セットから</span><span class="btn"><img class="deco" src="img/cat4_white.png" alt=""><span class="t"><em>最大30%OFF</em>で選ぶ</span></span></a></div>
+</section>
+<section class="scenes" id="scenes">
+  <span class="kick">大人の推し活に</span>
+  <h2>NeKouが合う<span class="em">5つの手紙</span></h2>
+  <figure class="pp"><img src="img/person.jpg" alt="封筒からのぞく和紙の猫の文香を手に持つ女性（イメージ）" loading="lazy"><figcaption>※写真はイメージです</figcaption></figure>
+  <div class="sc top"><div class="in"><span class="no"><small>CASE</small>01</span><span class="who">観劇のあとに推しへ</span><h3>余韻が残るうちに書く<span class="em">感想</span></h3><p>舞台の余韻が残るうちに書く手紙に。5つのポーズからその日の舞台に合う1匹を選んで。</p></div></div>
+  <div class="sc top"><div class="in"><span class="no"><small>CASE</small>02</span><span class="who">作家さん・漫画家さんへ</span><h3>新刊を読んだ日の<br><span class="em">ファンレター</span></h3><p>読み終えた日の気持ちを書いた便箋に1匹のせて。</p></div></div>
+  <div class="sc"><div class="in"><span class="no"><small>CASE</small>03</span><span class="who">ライブのあとに推しへ</span><h3>会場で聴いた<span class="em">1曲</span>の話</h3><p>会場で聴いた1曲の感想を書く手紙に。職人が仕立てた和の香りが手紙の言葉を引き立てます。</p></div></div>
+  <div class="sc"><div class="in"><span class="no"><small>CASE</small>04</span><span class="who">推し友へ</span><h3>一緒に観た日の<span class="em">お礼状</span></h3><p>遠征や観劇に誘ってくれた友だちへの手紙に。開けたときに小さな猫が顔を出します。</p></div></div>
+  <div class="sc"><div class="in"><span class="no"><small>CASE</small>05</span><span class="who">自分の時間に</span><h3>手紙を書く<span class="em">夜のおとも</span></h3><p>好きな人のことを思いながら便箋に向かう時間に。書き終えた手紙に1匹のせて封をする。そこまでがひとつの楽しみです。</p></div></div>
+</section>
+
+<section class="manga" id="manga">
+  <span class="kick story">STORY</span>
+  <h2>観劇のあとの<span class="em">推しへの手紙</span></h2>
+  <figure class="comic" id="comic"><img src="img/manga_oshi.jpg" alt="観劇のあとに推しへのファンレターを書き、プレゼントの代わりに和紙の猫を1匹そえて封筒に入れるまでの4コマ漫画" loading="lazy"><span class="fk" style="top:2.2%;left:3%">今日の舞台<br>最高だった…</span><span class="fk" style="top:27.4%;right:3%">感想は書けたけど<br>プレゼントは負担かな…</span><span class="fk" style="top:51.9%;left:3%">この子を1匹<br>そえてみよう</span><span class="fk" style="top:77.4%;right:3%">この1通に<br>気持ちを込めて</span></figure>
+  <p class="imgnote">※イメージです</p>
+</section>
+
+<section class="voice" id="voice">
+  <span class="kick">お客様の声</span>
+  <h2>いただいた<span class="em">お声</span></h2>
+  <div class="vb l"><span class="av"><img src="img/cat2.png" alt=""></span><div class="bb"><b class="vh">香りが強すぎず<span class="em">ちょうどいい</span></b><p>推しへの手紙に入れて使っている。<b>香りの主張が強すぎない</b>ところが気に入っている。</p><span class="who">ご購入者さまのお声（要約）</span></div></div>
+  <div class="vb r"><span class="av"><img src="img/cat3.png" alt=""></span><div class="bb"><b class="vh"><span class="em">ポーズが選べる</span>のがうれしい</b><p>「ポーズが複数なのが良い。」</p><span class="who">Makuakeでのコメントより</span></div></div>
+  <div class="vb l"><span class="av"><img src="img/cat5.png" alt=""></span><div class="bb"><b class="vh">ひと目で<span class="em">気に入った</span></b><p>「かわいさに一目惚れ。」</p><span class="who">Makuakeでのコメントより</span></div></div>
+</section>
+
+
+<section class="cmp" id="cmp">
+  <span class="kick">ほかの文香とくらべて</span>
+  <h2>猫の形で<span class="em">1枚154円</span>から</h2>
+  <table>
+    <thead><tr><th></th><th>一般的な文香</th><th class="me">NeKou</th></tr></thead>
+    <tbody>
+      <tr><th>1枚あたり</th><td>約98〜220円</td><td class="me">154円〜</td></tr>
+      <tr><th>形</th><td>四角など</td><td class="me">5ポーズの猫</td></tr>
+      <tr><th>送料</th><td>販売店による<br><small>（200〜330円が多い）</small></td><td class="me">1セットから無料</td></tr>
+    </tbody>
+  </table>
+  <p class="note3">※当社調べ（2026年11月・通販で販売されている文香7商品）。NeKouの154円はケースなし10枚をこのページのクーポン（30%OFF）で購入した場合</p>
+</section>
+<section class="offer" id="offer">
+  <span class="kick">このページで配布中のクーポン</span>
+  <h2><small>2つから選べて</small><br>最大<span class="big">30</span><span class="em">%OFF</span></h2>
+  <div class="plans">
+    <div class="plan best"><span class="crown">おすすめ</span><div class="pin">
+      <img src="img/bags5_cut.png" alt="平袋に入った10枚のNeKou" loading="lazy">
+      <p class="pt">ケースなし <b>10</b>枚</p>
+      <p class="pd">5ポーズ×各2枚・1枚ずつ平袋入り</p>
+      <p class="pr"><s class="q">クーポンで</s><span>30%OFF</span><b>1,540</b>円</p>
+      <p class="per">1枚あたり<b>154</b>円</p>
+      <div class="code"><span>クーポン</span><b>NEKOU30A</b><button type="button" data-copy="NEKOU30A">コピー</button></div>
+      <a class="go" href="https://www.creema.jp/item/21523558/detail" data-go="NEKOU30A">コードをコピーしてCreemaへ</a>
+    </div></div>
+    <div class="plan"><div class="pin">
+      <img src="img/case_set.jpg" alt="専用ケースに入った5枚のNeKou" loading="lazy">
+      <p class="pt">ケース入り <b>5</b>枚</p>
+      <p class="pd">5ポーズ×各1枚・専用ケース入り</p>
+      <p class="pr"><s class="q">クーポンで</s><span>25%OFF</span><b>1,260</b>円</p>
+      <p class="per">ちょっとした贈り物にも</p>
+      <div class="code"><span>クーポン</span><b>NEKOU25A</b><button type="button" data-copy="NEKOU25A">コピー</button></div>
+      <a class="go sub" href="https://www.creema.jp/item/20609200/detail" data-go="NEKOU25A">コードをコピーしてCreemaへ</a>
+    </div></div>
+  </div>
+  <div class="howbuy">
+    <p class="hb">Creemaでの買い方</p>
+    <ol>
+      <li><b>1</b><span>ボタンを押すとクーポンコードがコピーされ、Creemaの商品ページが開きます</span></li>
+      <li><b>2</b><span>カートに入れて購入へ。はじめての方は会員登録（無料）をします</span></li>
+      <li><b>3</b><span>お会計の「クーポン」欄にコードを貼り付けると、<em>1,540円</em>（ケース入りは<em>1,260円</em>）になります</span></li>
+    </ol>
+    <p class="hn">※Creemaの商品ページでは通常の価格で表示されます。お会計でクーポンを入れたあとの金額をご確認ください。</p>
+  </div>
+  <ul class="terms">
+    <li>Creemaのご購入画面の「クーポン」欄に入力してください（1回のご注文で1枚）</li>
+    <li>NEKOU30Aは2,000円以上・NEKOU25Aは1,000円以上のご注文で使えます</li>
+    <li>Creemaでのご購入には会員登録（無料）が必要です</li>
+    <li>有効期限：2027年2月15日まで</li>
+    <li>送料無料・ポストにお届け（匿名配送）・お支払いから3日以内に発送</li>
+  </ul>
+  <div class="assure"><b>折れ・欠けがあれば交換します</b><span>到着から14日以内にCreemaのメッセージでご連絡ください。</span></div>
+</section>
+
+<section class="kodawari" id="maker">
+  <span class="kick">NeKouのこと</span>
+  <h2>和紙の猫の文香の<span class="em">こだわり</span></h2>
+  <figure class="mk"><img src="img/makuake_pc_blur.jpg" alt="NeKouのMakuakeプロジェクトページ" loading="lazy"><figcaption>Makuakeのプロジェクトページ（2026年2月終了）・目標の148%を達成</figcaption></figure>
+  <div class="pt3"><span class="pn">POINT<b>01</b></span><h3>お香を練り込んで<span class="em">漉いた和紙</span></h3><p>線香の国内最大の産地である淡路島で、お香の会社が和紙にお香を練り込んで漉く技法でつくっています。</p></div>
+  <div class="pt3"><span class="pn">POINT<b>02</b></span><h3>無着色・<span class="em">IFRA基準</span>の香料</h3><p>色は和紙そのままです。香料は国際的な安全基準（IFRA）に沿ったものを使っています。香りはラベンダーをもとにした落ち着いた和の香りです。</p></div>
+  <div class="pt3"><span class="pn">POINT<b>03</b></span><h3>紙の専門店が<span class="em">猫の型</span>を制作</h3><p>5種類の猫の型と抜きは紙の専門店PAPIER LABO.が手がけました。</p></div>
+</section>
+
+<section class="howto" id="howto">
+  <span class="kick">使い方</span>
+  <h2>便箋に<span class="em">1匹はさむ</span>だけ</h2>
+  <div class="steps">
+    <div class="st"><span class="ic"><img src="img/cat2.png" alt=""></span><span class="no">STEP<b>1</b></span><p>その日の手紙に合う1匹を選ぶ</p></div>
+    <div class="st"><span class="ic"><img src="img/cat4.png" alt=""></span><span class="no">STEP<b>2</b></span><p>書き終えた便箋にはさむ</p></div>
+    <div class="st"><span class="ic"><img src="img/cat1.png" alt=""></span><span class="no">STEP<b>3</b></span><p>封をして渡す・送る</p></div>
+  </div>
+  <p class="more">手帳や名刺入れにはさむこともできます。燃えない皿の上で火をつけるとお香としても楽しめます（煙が出るので換気をしてください）。</p>
+</section>
+
+<section class="before" id="before">
+  <h2>送る前にご確認ください</h2>
+  <ul>
+    <li>便箋1通に1枚が目安です。</li>
+    <li>布に直接触れると色移りすることがあります。</li>
+    <li>香りを保つため湿気と直射日光を避けて、なるべく密閉して保管してください。</li>
+  </ul>
+</section>
+
+<section class="qa" id="qa">
+  <h2>よくある質問</h2>
+  <details><summary>手紙に入れると郵便料金は変わりますか？</summary><p>NeKouは和紙1枚で重さも厚みもほとんどありません。ふだんの手紙と同じ料金で送れます。</p></details>
+  <details><summary>香りはどのくらいしますか？</summary><p>封を開けたときにふわりと感じる上品な香りです。職人が仕立てた和の香りが手紙の言葉を引き立てます。</p></details>
+  <details><summary>どんな香りですか？</summary><p>ラベンダーを淡路島のお香の職人が落ち着いた和の香りに仕立てています。香水のような華やかさより、お香らしいやわらかさを感じる香りです。</p></details>
+  <details><summary>事務所や劇場に送っても大丈夫ですか？</summary><p>手紙の受け付けのルールは送り先ごとに異なります。手紙以外の同封をお断りしているところもあるので、送る前に公式の案内をご確認ください。</p></details>
+  <details><summary>ケース入りとケースなしの違いは？</summary><p>ケース入りは5枚（5ポーズ×各1枚）が専用のケースに入ったセットです。ケースなしは10枚（5ポーズ×各2枚）で1枚あたりがお得です。どちらも1枚ずつ平袋に入れてお届けします。</p></details>
+  <details><summary>届いたNeKouが折れていたら？</summary><p>到着から14日以内にCreemaのメッセージでご連絡ください。新しいものと交換します。</p></details>
+  <details><summary>いつ届きますか？</summary><p>お支払いの確認から3日以内に発送し、ポストにお届けします。</p></details>
+  <details><summary>名前や住所を知られずに買えますか？</summary><p>Creemaの「あんしん匿名便」でお届けします。購入者と出品者のどちらも名前や住所を相手に知らせずにやりとりできます。</p></details>
+  <details><summary>ラッピングはできますか？</summary><p>ラッピングは承っていません。ケース入りは専用のケースに入っているので、そのまま贈り物にもお使いいただけます。</p></details>
+  <details><summary>クーポンはどこで使いますか？</summary><p>Creemaのご購入画面にある「クーポン」の欄に入力してください。1回のご注文で使えるクーポンは1枚です。</p></details>
+  <details><summary>どのように保管すればいいですか？</summary><p>高温多湿と直射日光を避けて、なるべく密閉できる袋や箱に入れて保管してください。</p></details>
+</section>
+
+<section class="last" id="last">
+  <h2>次の推しへの手紙<small>に</small><br><span class="em">1匹</span>そえて</h2>
+  <div class="fv2 ctaw"><a class="cv" href="#offer"><span class="tab">送料無料・<em>1</em>セットから</span><span class="btn"><img class="deco" src="img/cat4_white.png" alt=""><span class="t"><em>最大30%OFF</em>で選ぶ</span></span></a></div>
+</section>
+
+<footer class="ft">
+  <p class="fl">NeKou</p>
+  <p>ご購入・お問い合わせはCreemaのNeKouのページから承っています。販売事業者の表示はCreemaのショップページをご覧ください。</p>
+  <div class="privacy"><b>このページの閲覧データについて</b>
+  <p>このページでは、どこまで読まれたか・どのボタンが押されたかを知ってページを良くするために、Microsoft Clarity を使っています。Clarity は Cookie などを使い、ページ上の操作（スクロール・クリックなど）や、お使いの端末・ブラウザの情報を Microsoft に送ります。Microsoft はこれらの情報を、Microsoft Advertising を含む自社のサービスの提供と改善にも使います。氏名やメールアドレスなど、このページに入力された内容は送りません。詳しくは<a href="https://privacy.microsoft.com/ja-jp/privacystatement" target="_blank" rel="noopener">Microsoft のプライバシーに関する声明</a>をご覧ください。Cookie はブラウザの設定で無効にできます。</p></div>
+  <p class="cp">© NeKou</p>
+</footer>
+</main>
+<div class="fixed"><a class="cv1" href="#offer"><span>送料無料・1セットから</span><b><em>最大30%OFF</em>で選ぶ</b></a></div>
+<script>(function(){var f=document.querySelector(".fixed"),fv=document.getElementById("fv"),of=document.getElementById("offer");function t(){var a=fv.getBoundingClientRect().bottom<0,o=of.getBoundingClientRect();var inOffer=o.top<innerHeight&&o.bottom>0;f.classList.toggle("on",a&&!inOffer)}addEventListener("scroll",t,{passive:true});t()})();</script>
+<script>document.querySelectorAll("[data-copy]").forEach(function(b){b.addEventListener("click",function(){try{navigator.clipboard.writeText(b.dataset.copy);b.textContent="コピーしました"}catch(e){}})});document.querySelectorAll("[data-go]").forEach(function(a){a.addEventListener("click",function(){try{navigator.clipboard.writeText(a.dataset.go)}catch(e){}})});</script>
+
+<script>(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y)})(window,document,"clarity","script","zik0wl3cx5");</script>
+<script>(function(){
+function ev(n){try{clarity("event",n)}catch(e){}}
+try{clarity("set","lp","adult")}catch(e){}
+var q=new URLSearchParams(location.search);["utm_source","utm_campaign","utm_content"].forEach(function(k){if(q.get(k))try{clarity("set",k,q.get(k))}catch(e){}});
+if("IntersectionObserver"in window){var seen={};var io=new IntersectionObserver(function(es){es.forEach(function(e){var id=e.target.id;if(e.isIntersecting&&!seen[id]){seen[id]=1;ev("a_reach_"+id)}})},{threshold:.4});document.querySelectorAll("section[id]").forEach(function(s){io.observe(s)})}
+document.querySelectorAll('a[href*="creema.jp"]').forEach(function(a){a.addEventListener("click",function(){var s=a.closest("section[id]");ev("a_go_creema");ev("a_go_"+(a.dataset.go||"x")+"_"+(s?s.id:"other"))})});
+document.querySelectorAll("[data-copy]").forEach(function(b){b.addEventListener("click",function(){ev("a_copy_"+b.dataset.copy)})});
+})();</script>
+
+</body>
+</html>
